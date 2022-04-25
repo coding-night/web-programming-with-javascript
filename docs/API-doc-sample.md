@@ -1,5 +1,6 @@
 **Title**
 ----
+
   <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
 
 * **URL**
@@ -12,16 +13,16 @@
 
   `GET` | `POST` | `DELETE` | `PUT`
   
-*  **URL Params**
+* **URL Params**
 
-   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
+   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._>
 
    **Required:**
- 
+
    `id=[integer]`
 
    **Optional:**
- 
+
    `photo_id=[alphanumeric]`
 
 * **Data Params**
@@ -34,7 +35,7 @@
 
   * **Code:** 200 <br />
     **Content:** `{ id : 12 }`
- 
+
 * **Error Response:**
 
   <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
@@ -49,16 +50,16 @@
 
 * **Notes:**
 
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
+  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._>
 
 English
 `GET` | `POST` | `DELETE` | `PUT`
-
 
 ## Example 1
 
 **Show User**
 ----
+
   Returns json data about a single user.
 
 * **URL**
@@ -69,10 +70,10 @@ English
 
   `GET`
   
-*  **URL Params**
+* **URL Params**
 
    **Required:**
- 
+
    `id=[integer]`
 
 * **Data Params**
@@ -83,7 +84,7 @@ English
 
   * **Code:** 200 <br />
     **Content:** `{ id : 12, name : "Mohammed Elzanaty" }`
- 
+
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
@@ -96,16 +97,16 @@ English
 
 ## Example 2 using other template
 
-- Index - **`token required`**
-  - HTTP verb `GET`
-  - Endpoint:- `/api/users/`
-  - Request Body
+* Index - **`token required`**
+  * HTTP verb `GET`
+  * Endpoint:- `/api/users/`
+  * Request Body
 
     ```json
       N/A
     ```
 
-  - Response Body -- `Array of user objects`
+  * Response Body -- `Array of user objects`
 
     ```json
       {
